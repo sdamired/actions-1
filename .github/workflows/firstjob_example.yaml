@@ -1,14 +1,19 @@
-name: my first actions 
+name: My First Actions 
 
 on: push
 
 jobs: 
-    first_job:
-        runs-on: ubuntu-latest 
-        steps:
-         - name: checkout
-           uses: actions/checkout@v4
-         - name: run the script
-           
-         -name: execute shell script
-          run: ./ascii-script.sh  # Corrected path
+  first_job:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Debug - List All Files
+        run: ls -la  # Check if ascii-script.sh exists
+
+      - name: Make script executable
+        run: chmod +x ascii-script.sh
+
+      - name: Execute shell script
+        run: ./ascii-script.sh  # Runs the script
