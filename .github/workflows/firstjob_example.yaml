@@ -10,8 +10,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create and Execute Shell Script
-        run: |
-          echo '#!/bin/bash' > test_script.sh
-          echo 'echo "Hello, GitHub Actions!"' >> test_script.sh
-          chmod +x test_script.sh
-          ./test_script.sh
+        run: ls -l
