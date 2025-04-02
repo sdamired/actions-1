@@ -11,7 +11,8 @@ jobs:
 
       - name: Debug - List All Files
         run: ls -la  # Check if ascii-script.sh exists
-
+      - name: go to directory 
+        run: cd .github/workflows
       - name: Make script executable
         run: chmod +x ascii-script.sh
 
