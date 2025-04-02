@@ -15,3 +15,5 @@ jobs:
            run: ls -la
          - name: Read me file
            run: cat README.md
+         - name: run cowsay
+           run: cowsay -f dragon "Here be dragons!"
