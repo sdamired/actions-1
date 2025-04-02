@@ -17,5 +17,4 @@ jobs:
       - name: Make script executable
         run: chmod +x ascii-script.sh
 
-      - name: Execute shell script
-        run: ./ascii-script.sh  # Runs the script
+      
