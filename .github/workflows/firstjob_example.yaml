@@ -13,6 +13,7 @@ jobs:
         run: ls -la  # Check if ascii-script.sh exists
       - name: go to directory 
         run: cd .github/workflows
+        run: ls -lrt
       - name: Make script executable
         run: chmod +x ascii-script.sh
 
