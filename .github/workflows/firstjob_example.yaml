@@ -1,21 +1,17 @@
-name: My First Actions 
+name: Run Shell Script via GitHub Actions
 
-on: push
+on: push  # Runs the script whenever code is pushed
 
-jobs: 
-  first_job:
-    runs-on: ubuntu-latest 
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Debug - List All Files
-        run: ls -la  # Check if ascii-script.sh exists
-      - name: go to directory 
-        run: cd .github/workflows
-      - name: list the files
-        run: ls -lrt
-      - name: Make script executable
-        run: chmod +x ascii-script.sh
-
-      
+      - name: Create and Execute Shell Script
+        run: |
+          echo '#!/bin/bash' > test_script.sh
+          echo 'echo "Hello, GitHub Actions!"' >> test_script.sh
+          chmod +x test_script.sh
+          ./test_script.sh
