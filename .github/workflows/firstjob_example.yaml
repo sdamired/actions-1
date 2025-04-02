@@ -10,4 +10,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create and Execute Shell Script
-        run: ls -l
+        run: chmod +x 1.sh
+      - name: run a script
+        run: ./1.sh
