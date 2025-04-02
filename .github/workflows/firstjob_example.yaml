@@ -9,7 +9,7 @@ jobs:
          - name: checkout
            uses: actions/checkout@v4
          - name: run the script
-           run |
+           run: |
              ls -lrt
              chmod +x ascii-script.sh
             ./ascii-script.sh
