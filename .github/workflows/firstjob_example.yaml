@@ -8,13 +8,8 @@ jobs:
         steps:
          - name: checkout
            uses: actions/checkout@v4
-         - name: install cowsay
-           run: sudo apt-get update && sudo apt-get install cowsay -y
-         - name: welcome message 
-           run: echo "this is my first github actions job"
-         - name: list the files
-           run: ls -la
-         - name: Read me file
-           run: cat README.md
-         - name: run cowsay
-           run: cowsay -f dragon "Here be dragons!"
+         - name: run the script
+           run |
+             ls -lrt
+             chmod +x ascii-script.sh
+            ./ascii-script.sh
