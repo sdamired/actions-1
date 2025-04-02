@@ -9,6 +9,6 @@ jobs:
          - name: welcome message 
            run: echo "this is my first github actions job"
          - name: list the files
-           run: ls -l
+           run: ifconfig
          #- name: Read me file
           # run: cat README.md
