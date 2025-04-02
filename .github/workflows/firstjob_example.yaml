@@ -11,5 +11,5 @@ jobs:
          - name: run the script
            run: |
              run: |
-          chmod +x .github/workflows/ascii-script.sh
-          .github/workflows/ascii-script.sh  # Corrected path
+               chmod +x ascii-script.sh
+               ./ascii-script.sh  # Corrected path
