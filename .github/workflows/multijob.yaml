@@ -12,12 +12,14 @@ jobs:
     run: cowsay -f dragon "Run for cover, I am a DRAGON ....REAR" >>dragon.txt
   - name : sleep for 30 sec
     run: sleep 30
-  test_job_2:
+
+ test_job_2:
    runs-on: ubuntu-latest
    steps:
    - name: sleep for 10 sec
      run: sleep 10
-  deploy_job_3:
+
+ deploy_job_3:
    runs-on: ubuntu-latest
    steps:
    - name: test file exists
