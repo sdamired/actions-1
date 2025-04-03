@@ -20,7 +20,8 @@ jobs:
    - name: sleep for 10 sec
      run: sleep 10
 
- deploy_job_3:
+ deploy_job_3: 
+   needs: test_job_2
    runs-on: ubuntu-latest
    steps:
    - name: test file exists
