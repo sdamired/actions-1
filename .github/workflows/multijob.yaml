@@ -12,5 +12,5 @@ jobs:
     run: cowsay -f dragon "Run for cover, I am a DRAGON ....REAR" >>dragon.txt
   - name : sleep for 30 sec
     run: sleep 30
- #test_job_2:
+ ##test_job_2:
  #deploy_job_3:
