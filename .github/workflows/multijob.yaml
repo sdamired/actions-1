@@ -1,0 +1,16 @@
+name: creating ASCII artwork 
+
+on: push
+
+jobs:
+ build_job_1:
+  run_on: ubuntu-latest
+  steps:
+  - name: install cowsay
+    run: apt-get update && apt-get install cowsay -y
+  - name: execute cvowsay cmd 
+    run: cowsay -f dragon "Run for cover, I am a DRAGON ....REAR" >>dragon.txt
+  - name : sleep for 30 sec
+    run: sleep 30
+ test_job_2:
+ deploy_job_3
