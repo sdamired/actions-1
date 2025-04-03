@@ -4,7 +4,7 @@ on: push
 
 jobs:
  build_job_1:
-  run_on: ubuntu-latest
+  run-on: ubuntu-latest
   steps:
   - name: install cowsay
     run: apt-get update && apt-get install cowsay -y
