@@ -13,4 +13,4 @@ jobs:
   - name : sleep for 30 sec
     run: sleep 30
  test_job_2:
- deploy_job_3
+ deploy_job_3:
