@@ -1,7 +1,7 @@
 name: Run Shell Script via GitHub Actions
 
 on: push  # Runs the script whenever code is pushed
-firstjob_example
+#firstjob_example
 jobs:
   run_script:
     runs-on: ubuntu-latest
