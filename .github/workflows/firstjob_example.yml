@@ -1,6 +1,7 @@
 name: Run Shell Script via GitHub Actions
 
-on: workflow_dispatch  # Runs the script whenever code is pushed
+on:
+ workflow_dispatch  # Runs the script whenever code is pushed
 #firstjob_example
 jobs:
   run_script:
