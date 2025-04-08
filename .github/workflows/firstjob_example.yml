@@ -1,16 +1,18 @@
 name: Run Shell Script via GitHub Actions
 
 on:
-  workflow_dispatch  # Runs the script whenever code is pushed
-#firstjob_example
+  workflow_dispatch  # Allows manual trigger from GitHub UI
+
 jobs:
   run_script:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Create and Execute Shell Script
+      - name: Make the shell script executable
         run: chmod +x 1.sh
-      - name: run a script
+
+      - name: Run the shell script
         run: ./1.sh
